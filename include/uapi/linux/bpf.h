@@ -2188,6 +2188,8 @@ union bpf_attr {
  *
  *	Return
  *		0 on success, or a negative error in case of failure.
+ *		For sockets with reuseport option, *struct bpf_sock*
+ *		return is from reuse->socks[] using hash of the packet.
  */
 #define __BPF_FUNC_MAPPER(FN)		\
 	FN(unspec),			\
