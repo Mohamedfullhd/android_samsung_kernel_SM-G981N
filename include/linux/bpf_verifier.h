@@ -150,6 +150,7 @@ struct bpf_verifier_state {
 	struct bpf_func_state *frame[MAX_CALL_FRAMES];
 	struct bpf_verifier_state *parent;
 	u32 curframe;
+	u32 active_spin_lock;
 	bool speculative;
 };
 
