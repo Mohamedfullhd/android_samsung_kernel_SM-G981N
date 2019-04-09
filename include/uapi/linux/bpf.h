@@ -249,6 +249,7 @@ enum bpf_attach_type {
  * offset to another bpf function
  */
 #define BPF_PSEUDO_CALL		1
+#define BPF_PSEUDO_MAP_VALUE	2
 
 /* flags for BPF_MAP_UPDATE_ELEM command */
 #define BPF_ANY		0 /* create new element or update existing */
