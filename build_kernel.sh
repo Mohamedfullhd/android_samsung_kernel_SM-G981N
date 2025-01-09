@@ -6,7 +6,7 @@ git clone --depth=1 https://github.com/Mohamed4k/android_samsung_kernel_SM-G981N
 
 cd android_samsung_kernel_SM-G981N
 
-git clone https://gitlab.com/LeCmnGend/clang.git -b clang-18 --depth=1
+git clone https://gitlab.com/LeCmnGend/clang.git -b clang-18 --depth=1 clang-18
 
 
 TC_DIR="$(pwd)/clang-18"
