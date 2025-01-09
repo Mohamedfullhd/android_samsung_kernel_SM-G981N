@@ -12,6 +12,14 @@ git clone https://gitlab.com/LeCmnGend/clang.git -b clang-18 --depth=1
 TC_DIR="$(pwd)/clang-18"
 
 export PATH="$TC_DIR/bin:$PATH"
+export CC=clang
+export AR=llvm-ar
+export NM=llvm-nm
+export OBJCOPY=llvm-objcopy
+export OBJDUMP=llvm-objdump
+export STRIP=llvm-strip
+export CROSS_COMPILE=aarch64-linux-gnu-
+export CROSS_COMPILE_ARM32=arm-linux-gnueabi
 
 mkdir -p out
 make O=out ARCH=arm64 vendor/x1q_kor_singlex_defconfig
