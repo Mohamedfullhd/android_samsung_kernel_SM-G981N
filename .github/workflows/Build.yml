@@ -3,10 +3,10 @@ name: Build Android Kernel with Clang 19
 on:
   push:
     branches:
-      - main  # أو استخدم فرعًا آخر إذا كان لديك فرع محدد
+      - Test  # أو استخدم فرعًا آخر إذا كان لديك فرع محدد
   pull_request:
     branches:
-      - main
+      - Test
 
 jobs:
   build:
