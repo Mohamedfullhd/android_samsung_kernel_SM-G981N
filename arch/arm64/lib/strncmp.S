@@ -308,4 +308,3 @@ CPU_BE( orr	syndrome, diff, has_nul )
 	mov	result, #0
 	ret
 ENDPIPROC(strncmp)
-EXPORT_SYMBOL_NOKASAN(strncmp)
