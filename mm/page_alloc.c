@@ -2914,9 +2914,9 @@ static void drain_local_pages_wq(struct work_struct *work)
 	 * cpu which is allright but we also have to make sure to not move to
 	 * a different one.
 	 */
-	migrate_disable();
+	preempt_disable();
 	drain_local_pages(NULL);
-	migrate_enable();
+	preempt_enable();
 }
 
 /*
