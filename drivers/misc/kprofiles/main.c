@@ -137,8 +137,7 @@ int kp_active_mode(void)
 
 	if (unlikely(kp_mode > 3)) {
 		kp_mode = 0;
-		pr_info("%s: Invalid value passed, falling back to level 0\n",
-			__func__);
+		pr_info("Invalid value passed, falling back to level 0\n");
 	}
 
 	return kp_mode;
